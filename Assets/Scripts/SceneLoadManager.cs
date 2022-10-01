@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class SceneLoadManager : MonoBehaviour
 {
 
-    [SerializeField] private float transitionTime;
+    [SerializeField] public float transitionTime;
 
     private Animator transitionAnimator;
     // Update is called once per frame
