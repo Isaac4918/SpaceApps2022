@@ -150,7 +150,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: fc4f88ae612e7a94abce038e9b5725bd, type: 3}
     - target: {fileID: 2711863931294048699, guid: 698c1f1ebbc69f346ab2b6bee6ed8747, type: 3}
       propertyPath: m_Name
-      value: Card (2)
+      value: "Tard\xEDgrade"
       objectReference: {fileID: 0}
     - target: {fileID: 3292146562995751161, guid: 698c1f1ebbc69f346ab2b6bee6ed8747, type: 3}
       propertyPath: m_Pivot.x
@@ -313,7 +313,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 35ad69a0bde38b4449a3b68f833a4133, type: 3}
     - target: {fileID: 2711863931294048699, guid: 698c1f1ebbc69f346ab2b6bee6ed8747, type: 3}
       propertyPath: m_Name
-      value: Card (4)
+      value: Caenorhabditis Elegans
       objectReference: {fileID: 0}
     - target: {fileID: 3292146562995751161, guid: 698c1f1ebbc69f346ab2b6bee6ed8747, type: 3}
       propertyPath: m_Pivot.x
@@ -483,7 +483,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 3d0f0615369dc9b4f878d2d52c9bf1f2, type: 3}
     - target: {fileID: 2711863931294048699, guid: 698c1f1ebbc69f346ab2b6bee6ed8747, type: 3}
       propertyPath: m_Name
-      value: Card (5)
+      value: Deinoccocus radiodurans
       objectReference: {fileID: 0}
     - target: {fileID: 3292146562995751161, guid: 698c1f1ebbc69f346ab2b6bee6ed8747, type: 3}
       propertyPath: m_Pivot.x
@@ -636,7 +636,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: ae5f7156b07462b4391d9134519c5e20, type: 3}
     - target: {fileID: 2711863931294048699, guid: 698c1f1ebbc69f346ab2b6bee6ed8747, type: 3}
       propertyPath: m_Name
-      value: Card (6)
+      value: Cryomyces antarcticus
       objectReference: {fileID: 0}
     - target: {fileID: 3292146562995751161, guid: 698c1f1ebbc69f346ab2b6bee6ed8747, type: 3}
       propertyPath: m_Pivot.x
@@ -1126,7 +1126,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: fc4f88ae612e7a94abce038e9b5725bd, type: 3}
     - target: {fileID: 2711863931294048699, guid: 698c1f1ebbc69f346ab2b6bee6ed8747, type: 3}
       propertyPath: m_Name
-      value: Card (7)
+      value: Methanopyrus kandleri
       objectReference: {fileID: 0}
     - target: {fileID: 3292146562995751161, guid: 698c1f1ebbc69f346ab2b6bee6ed8747, type: 3}
       propertyPath: m_Pivot.x
@@ -1536,7 +1536,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 2ca43204fe03f8e4c89af5331aadaf6d, type: 3}
     - target: {fileID: 2711863931294048699, guid: 698c1f1ebbc69f346ab2b6bee6ed8747, type: 3}
       propertyPath: m_Name
-      value: Card (1)
+      value: Carnobacterium pleistocenium
       objectReference: {fileID: 0}
     - target: {fileID: 3292146562995751161, guid: 698c1f1ebbc69f346ab2b6bee6ed8747, type: 3}
       propertyPath: m_Pivot.x
@@ -1929,7 +1929,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: ae5f7156b07462b4391d9134519c5e20, type: 3}
     - target: {fileID: 2711863931294048699, guid: 698c1f1ebbc69f346ab2b6bee6ed8747, type: 3}
       propertyPath: m_Name
-      value: Card (3)
+      value: Pleopsidium chlorophanum
       objectReference: {fileID: 0}
     - target: {fileID: 3292146562995751161, guid: 698c1f1ebbc69f346ab2b6bee6ed8747, type: 3}
       propertyPath: m_Pivot.x
@@ -2082,7 +2082,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 65cbb5f3181a95f40b91335f78787e7e, type: 3}
     - target: {fileID: 2711863931294048699, guid: 698c1f1ebbc69f346ab2b6bee6ed8747, type: 3}
       propertyPath: m_Name
-      value: Card
+      value: Thermococcus gammatolerans
       objectReference: {fileID: 0}
     - target: {fileID: 3292146562995751161, guid: 698c1f1ebbc69f346ab2b6bee6ed8747, type: 3}
       propertyPath: m_Pivot.x

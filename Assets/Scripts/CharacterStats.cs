@@ -8,16 +8,30 @@ public class CharacterStats : MonoBehaviour
     public List<string> disabledCardsList = new List<string>();
 
     public int points;
-    public float health = 0;
-    public int speed = 30;
-    public int jump = 2700;
-    public int hotResistance = 0;
-    public int coldResistance = 0;
-    public int RadResistance = 0;
-    public int highGravityResistance = 0;
-    public int lowGravityResistance = 0;
-    public int highPreassureResistance = 0;
-    public int lowPreassureResistance = 0;
+    public float health;
+    public int speed;
+    public int jump;
+    public int hotResistance;
+    public int coldResistance;
+    public int RadResistance;
+    public int highGravityResistance;
+    public int lowGravityResistance;
+    public int highPreassureResistance;
+    public int lowPreassureResistance;
+
+    private void Start() {
+        this.points = 10;
+        this.health = 100;
+        this.speed = 30;
+        this.jump = 2700;
+        this.hotResistance = 0;
+        this.coldResistance = 0;
+        this.RadResistance = 0;
+        this.highGravityResistance = 0;
+        this.lowGravityResistance = 0;
+        this.highPreassureResistance = 0;
+        this.lowPreassureResistance = 0;
+    }
 
     private void Awake()
     {
@@ -38,11 +52,6 @@ public class CharacterStats : MonoBehaviour
     }
 
     public void effects(string type){
-        
-    }
-
-    void Start()
-    {
         
     }
 

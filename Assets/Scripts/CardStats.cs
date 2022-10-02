@@ -20,91 +20,69 @@ public class CardStats : MonoBehaviour
 
     public void stats()
     {
-
-        if(Card.name == "Card")
+	//int cold, int hot, int lowPre, int highPre, int highGrav, int lowGrav, int rad, int cost
+        if(Card.name == "Thermococcus gammatolerans")
         {
-            sumarCarta(12,10,16,7,8,4,2,1);
+            sumarCarta(0,2,0,2,0,0,3,14);
         }
 
-        if(Card.name == "Card (1)")
-        {
-            Debug.Log(Card.name);
-            sumarCarta(12,10,16,7,8,4,2,1);
-        }
-
-        if(Card.name == "Card (2)")
+        if(Card.name == "Carnobacterium pleistocenium")
         {
             Debug.Log(Card.name);
-            sumarCarta(12,10,16,7,8,4,2,1);
+            sumarCarta(0,-1,2,2,0,0,0,11);
         }
 
-        if(Card.name == "Card (3)")
+        if(Card.name == "Tardígrade")
         {
             Debug.Log(Card.name);
-            sumarCarta(12,10,16,7,8,4,2,1);
+            sumarCarta(3,1,3,3,0,3,2,24);
         }
 
-        if(Card.name == "Card (4)")
-        {
-        /*
-            Thermococcus gammatolerans
-            +7 rad
-            +3 high temp
-            -2 low temp
-            -1 highpreassure
-            0 low preassure
-            0 gravity
-            0 gravity
-
-        */
-
-            Debug.Log(Card.name);
-            sumarCarta(5,10,16,7,8,4,2,1);
-        }
-
-        if(Card.name == "Card (5)")
+        if(Card.name == "Pleopsidium chlorophanum")
         {
             Debug.Log(Card.name);
-            sumarCarta(12,10,16,7,8,4,2,1);
+            sumarCarta(1,-1,0,0,-1,1,0,0);
         }
 
-        if(Card.name == "Card (6)")
+        if(Card.name == "Caenorhabditis Elegans")
         {
             Debug.Log(Card.name);
-            sumarCarta(12,10,16,7,8,4,2,1);
+            sumarCarta(-2,-1,0,1,3,0,0,4);
         }
 
-        if(Card.name == "Card (7)")
+        if(Card.name == "Deinoccocus radiodurans")
         {
             Debug.Log(Card.name);
-            sumarCarta(12,10,16,7,8,4,2,1);
+            sumarCarta(2,1,0,0,0,0,3,10);
         }
 
-        string lol = "";
-        for(int i = 0; i < CharacterStats.instance.disabledCardsList.Count; i++){
-            lol += CharacterStats.instance.disabledCardsList[i]+",,,";
+        if(Card.name == "Cryomyces antarcticus")
+        {
+            Debug.Log(Card.name);
+            sumarCarta(1,2,3,0,0,3,-2,14);
         }
-        Debug.Log(lol);
+
+        if(Card.name == "Methanopyrus kandleri")
+        {
+            Debug.Log(Card.name);
+            sumarCarta(-3,3,0,2,0,0,0,6);
+        }
     }
 
-    private void sumarCarta(int cost, int hot, int cold, int rad, int highGrav, int lowGrav, int highPre, int lowPre){
+    private void sumarCarta(int cold, int hot, int lowPre, int highPre, int highGrav, int lowGrav, int rad, int cost){
         if(CharacterStats.instance.points >= cost)
         {
-            //thisCard.interactable = false;
-            CharacterStats.instance.points -= cost;
-            CharacterStats.instance.hotResistance += hot;
             CharacterStats.instance.coldResistance += cold;
-            CharacterStats.instance.RadResistance += rad;
-            CharacterStats.instance.highGravityResistance += highGrav;
-            CharacterStats.instance.lowGravityResistance += lowGrav;
-            CharacterStats.instance.highPreassureResistance += highPre;
+            CharacterStats.instance.hotResistance += hot;
             CharacterStats.instance.lowPreassureResistance += lowPre;
-
+            CharacterStats.instance.highPreassureResistance += highPre;
+            CharacterStats.instance.highGravityResistance += highGrav;
+	        CharacterStats.instance.lowGravityResistance += lowGrav;
+            CharacterStats.instance.RadResistance += rad;
+            CharacterStats.instance.points -= cost;
             CharacterStats.instance.disabledCardsList.Add(Card.name);
         }
-        else{
-            Debug.Log("No se compra");
-        }
+        else Debug.Log("No se compra");
         
     }
 }
