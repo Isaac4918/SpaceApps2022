@@ -1,46 +1,47 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CardStats : MonoBehaviour
 {
     public GameObject Card;
-    // private int money = 10;
-    // public float radiation;
-    // public float cold;
-    // public float microgravity;
-    // public float hypergravity;
+    public Button thisCard;
+
+    private void FixedUpdate() {
+        thisCard = GetComponent<Button>();
+
+        for(int i = 0; i < CharacterStats.instance.disabledCardsList.Count; i++){
+            if(Card.name == CharacterStats.instance.disabledCardsList[i]){
+                thisCard.interactable = false;
+            }
+        }
+    }
 
     public void stats()
     {
+
         if(Card.name == "Card")
         {
-            money -= 2;
-            Debug.Log(Card.name);
-            Debug.Log(money);
-            //sumarCarta(1,6,7,8,4,2,1);
-
+            sumarCarta(12,10,16,7,8,4,2,1);
         }
 
         if(Card.name == "Card (1)")
         {
-            money -= 4;
             Debug.Log(Card.name);
-            Debug.Log(money);
+            sumarCarta(12,10,16,7,8,4,2,1);
         }
 
         if(Card.name == "Card (2)")
         {
-            money -= 5;
             Debug.Log(Card.name);
-            Debug.Log(money);
+            sumarCarta(12,10,16,7,8,4,2,1);
         }
 
         if(Card.name == "Card (3)")
         {
-            money -= 20;
             Debug.Log(Card.name);
-            Debug.Log(money);
+            sumarCarta(12,10,16,7,8,4,2,1);
         }
 
         if(Card.name == "Card (4)")
@@ -57,40 +58,53 @@ public class CardStats : MonoBehaviour
 
         */
 
-            money -= 10;
             Debug.Log(Card.name);
-            Debug.Log(money);
+            sumarCarta(5,10,16,7,8,4,2,1);
         }
 
         if(Card.name == "Card (5)")
         {
-            money -= 3;
             Debug.Log(Card.name);
-            Debug.Log(money);
+            sumarCarta(12,10,16,7,8,4,2,1);
         }
 
         if(Card.name == "Card (6)")
         {
-            money -= 4;
             Debug.Log(Card.name);
-            Debug.Log(money);
+            sumarCarta(12,10,16,7,8,4,2,1);
         }
 
         if(Card.name == "Card (7)")
         {
-            money -= 6;
             Debug.Log(Card.name);
-            Debug.Log(money);
+            sumarCarta(12,10,16,7,8,4,2,1);
         }
+
+        string lol = "";
+        for(int i = 0; i < CharacterStats.instance.disabledCardsList.Count; i++){
+            lol += CharacterStats.instance.disabledCardsList[i]+",,,";
+        }
+        Debug.Log(lol);
     }
 
-    public void sumarCarta(int cost, int hot, int cold, int rad, int highGrav, int lowGrav, int highPre, int lowPre){
-        CharacterStats.instance.hotResistance += hot;
-        int coldResistance;
-        int RadResistance;
-        int highGravityResistance;
-        int lowGravityResistance;
-        int highPreassureResistance;
-        int lowPreassureResistance;
+    private void sumarCarta(int cost, int hot, int cold, int rad, int highGrav, int lowGrav, int highPre, int lowPre){
+        if(CharacterStats.instance.points >= cost)
+        {
+            //thisCard.interactable = false;
+            CharacterStats.instance.points -= cost;
+            CharacterStats.instance.hotResistance += hot;
+            CharacterStats.instance.coldResistance += cold;
+            CharacterStats.instance.RadResistance += rad;
+            CharacterStats.instance.highGravityResistance += highGrav;
+            CharacterStats.instance.lowGravityResistance += lowGrav;
+            CharacterStats.instance.highPreassureResistance += highPre;
+            CharacterStats.instance.lowPreassureResistance += lowPre;
+
+            CharacterStats.instance.disabledCardsList.Add(Card.name);
+        }
+        else{
+            Debug.Log("No se compra");
+        }
+        
     }
 }

@@ -5,7 +5,9 @@ using UnityEngine;
 public class CharacterStats : MonoBehaviour
 {   
     public static CharacterStats instance;
-    public int points = 10;
+    public List<string> disabledCardsList = new List<string>();
+
+    public int points;
     public int health = 0;
     public int speed;
     public int jump;
