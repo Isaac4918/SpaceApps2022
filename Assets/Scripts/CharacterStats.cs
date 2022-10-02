@@ -8,16 +8,16 @@ public class CharacterStats : MonoBehaviour
     public List<string> disabledCardsList = new List<string>();
 
     public int points;
-    public int health = 0;
-    public int speed;
-    public int jump;
+    public float health = 0;
+    public int speed = 30;
+    public int jump = 2700;
     public int hotResistance = 0;
-    public int coldResistance;
-    public int RadResistance;
-    public int highGravityResistance;
-    public int lowGravityResistance;
-    public int highPreassureResistance;
-    public int lowPreassureResistance;
+    public int coldResistance = 0;
+    public int RadResistance = 0;
+    public int highGravityResistance = 0;
+    public int lowGravityResistance = 0;
+    public int highPreassureResistance = 0;
+    public int lowPreassureResistance = 0;
 
     private void Awake()
     {
@@ -46,7 +46,6 @@ public class CharacterStats : MonoBehaviour
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         
