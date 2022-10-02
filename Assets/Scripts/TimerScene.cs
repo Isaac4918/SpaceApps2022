@@ -16,7 +16,7 @@ public class TimerScene : MonoBehaviour
 
     IEnumerator Timer()
     {
-        // int newIndex = (SceneManager.GetActiveScene().buildIndex + 1)%7;
+        int newIndex = (SceneManager.GetActiveScene().buildIndex + 1)%7;
         // Wait
         yield return new WaitForSeconds(transitionTime);
 
