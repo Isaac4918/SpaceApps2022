@@ -26,6 +26,6 @@ public class SceneLoadManager : MonoBehaviour
     {
         transitionAnimator.SetTrigger("StartTransition");
         yield return new WaitForSeconds(transitionTime);
-        SceneManager.LoadScene(sceneIndex); 
+        SceneManager.LoadScene(sceneIndex);
     }
 }
