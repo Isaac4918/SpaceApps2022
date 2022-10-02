@@ -7,6 +7,7 @@ public class SceneLoadManager : MonoBehaviour
 {
 
     [SerializeField] public float transitionTime;
+    public int nextSceneIndex;
 
     private Animator transitionAnimator;
     // Update is called once per frame
