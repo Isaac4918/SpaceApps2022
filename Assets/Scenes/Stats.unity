@@ -913,6 +913,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6636802851024bb4caca8c419ddbd15f, type: 3}
+--- !u!1 &987762549 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4456194213520161001, guid: 6636802851024bb4caca8c419ddbd15f, type: 3}
+  m_PrefabInstance: {fileID: 987762548}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &987762550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 987762549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d84fcabcea50f469f852b083ad8824, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transitionTime: 5
 --- !u!1 &1011860385 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2711863931294048699, guid: 698c1f1ebbc69f346ab2b6bee6ed8747, type: 3}
@@ -947,6 +965,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 384ec70d02a33d944a7becb6571f9918, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  disabledCardsList: []
   points: 1000
   health: 0
   speed: 0
@@ -1678,6 +1697,7 @@ GameObject:
   - component: {fileID: 1622539220}
   - component: {fileID: 1622539219}
   - component: {fileID: 1622539222}
+  - component: {fileID: 1622539223}
   m_Layer: 5
   m_Name: ReadyButton
   m_TagString: Untagged
@@ -1812,6 +1832,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   readyAnimation: {fileID: 1278714097}
+--- !u!114 &1622539223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1622539217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d84fcabcea50f469f852b083ad8824, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transitionTime: 5
 --- !u!1 &1732767660
 GameObject:
   m_ObjectHideFlags: 0

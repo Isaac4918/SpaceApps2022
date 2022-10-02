@@ -18,7 +18,7 @@ public class SceneLoadManager : MonoBehaviour
 
     public void LoadNextScene()
     {
-        int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1; 
+        //int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1; 
         StartCoroutine(SceneLoad(nextSceneIndex));
     }
 
