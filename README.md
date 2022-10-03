@@ -7,7 +7,7 @@ Isaac Araya Solano
 Alexia Cerdas Aguilar
 Nahomi Nicole Cordero Aguilar
 Marco Rodrigo Corrales Barrantes
-Anthony Guzmáb Agüero
+Anthony Guzmán Agüero
 Pablo Portuguez Peraza
 
 
