@@ -181,7 +181,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "You won! At least by now\u2026 Scientists still has a lot of research
+  m_text: "You won! At least by now\u2026 Scientists still have a lot of research
     to do. Will you help us?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
@@ -449,7 +449,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4d84fcabcea50f469f852b083ad8824, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transitionTime: 5
+  transitionTime: 10
 --- !u!114 &1754261123
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -463,7 +463,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transitionTime: 0
-  nextSceneIndex: 0
+  nextSceneIndex: 5
 --- !u!1001 &1779224509
 PrefabInstance:
   m_ObjectHideFlags: 0

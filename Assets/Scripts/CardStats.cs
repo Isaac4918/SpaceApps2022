@@ -29,7 +29,7 @@ public class CardStats : MonoBehaviour
         if(Card.name == "Carnobacterium pleistocenium")
         {
             Debug.Log(Card.name);
-            sumarCarta(0,-1,2,2,0,0,0,11);
+            sumarCarta(0,-1,2,2,0,0,0,8);
         }
 
         if(Card.name == "Tardígrade")
