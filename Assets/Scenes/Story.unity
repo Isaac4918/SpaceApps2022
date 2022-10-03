@@ -282,7 +282,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transitionTime: 0
-  nextSceneIndex: 2
+  nextSceneIndex: 6
 --- !u!114 &601871937
 MonoBehaviour:
   m_ObjectHideFlags: 0

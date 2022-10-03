@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Credits.unity
     guid: 40e6771031cbb8e42a1066455262a44b
+  - enabled: 1
+    path: Assets/Scenes/MarsDescription.unity
+    guid: 30bf5fa84fcf7df4d87eb531a3481279
   m_configObjects: {}
