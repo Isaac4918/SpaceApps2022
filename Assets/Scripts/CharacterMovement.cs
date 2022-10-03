@@ -11,6 +11,7 @@ public class CharacterMovement : MonoBehaviour
     public float speed;
     public float jumpForce;
     private bool grounded; 
+    private Animator Animator;
 
 
     void Start()
@@ -18,6 +19,7 @@ public class CharacterMovement : MonoBehaviour
         Rigidbody2D = GetComponent<Rigidbody2D>();
         this.speed = CharacterStats.instance.speed;
         this.jumpForce = CharacterStats.instance.jump;
+        Animator = GetComponent<Animator>();
     }
 
     
@@ -25,13 +27,21 @@ public class CharacterMovement : MonoBehaviour
     {
         Horizontal = Input.GetAxisRaw("Horizontal");
 
+        bool animar = false;
+
         if(Horizontal < 0){
             transform.localScale = new Vector3(-1, 1, 1);
+            animar = true;
         }else if(Horizontal>0){
             transform.localScale = new Vector3(1, 1, 1);
+            animar = true;
+        }else{
+            animar = false;
         }
 
-        
+
+
+        Animator.SetBool("running", animar);   
 
         if(Input.GetKeyDown(KeyCode.W) && grounded){
             jump();
@@ -47,7 +57,9 @@ public class CharacterMovement : MonoBehaviour
         if(other.collider.CompareTag("KillLimit")){
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
-        
+        if(other.collider.CompareTag("WinLimit")){
+            SceneManager.LoadScene("WinningScene");
+        }
     }
 
     private void OnCollisionExit2D(Collision2D other) {

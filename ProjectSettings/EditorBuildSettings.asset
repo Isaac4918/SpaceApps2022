@@ -17,4 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/L1_Marte.unity
     guid: 38197f4baf32683458d14e73a67a04ce
+  - enabled: 1
+    path: Assets/Scenes/WinningScene.unity
+    guid: fc35194072dce0b4689aef0b420c6a56
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 40e6771031cbb8e42a1066455262a44b
   m_configObjects: {}
