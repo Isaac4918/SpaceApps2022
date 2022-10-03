@@ -9,8 +9,8 @@ public class CharacterStats : MonoBehaviour
 
     public int points;
     public float health;
-    public int speed;
-    public int jump;
+    public float speed;
+    public float jump;
     public int hotResistance;
     public int coldResistance;
     public int RadResistance;
@@ -47,16 +47,61 @@ public class CharacterStats : MonoBehaviour
         this.health += livePoints;
     }
 
-    public void damage(int livePoints, string type){
+    public void damage(float livePoints){
         this.health -= livePoints;
     }
 
     public void effects(string type){
-        
+
+        if(type == "initials"){
+            if(highGravityResistance < 0){
+                float percentage = Mathf.Abs(highGravityResistance)/7;
+                this.jump -= this.jump*(percentage);
+            }
+            if(lowGravityResistance < 0){
+                float percentage = Mathf.Abs(lowGravityResistance)/7;
+                this.jump += this.jump*(percentage);
+            }
+            if(highPreassureResistance < 0){
+                float percentage = Mathf.Abs(highGravityResistance)/7;
+                this.speed -= this.speed*(percentage);
+            }
+            if(lowPreassureResistance < 0){
+                float percentage = Mathf.Abs(lowPreassureResistance)/7;
+                this.speed += this.speed*(percentage);
+            }
+
+        }
+        else if(type == "continuos"){
+            if(hotResistance < 0){
+                float percentage = Mathf.Abs(hotResistance)/7;
+                this.damage(1*percentage);
+            }
+            if(coldResistance < 0){
+                float percentage = Mathf.Abs(coldResistance)/7;
+                this.damage(1*percentage);
+            }
+            if(RadResistance < 0){
+                float percentage = Mathf.Abs(RadResistance)/7;
+                this.damage(1*percentage);
+            }
+        }
+
     }
 
-    void Update()
+    public void addPoints(){
+        this.points += 1;
+    }
+
+
+    public void ContinuosEffects()
     {
-        
+        effects("continuos");
+    }
+
+    
+    public void InitialEffects()
+    {
+        effects("initials");
     }
 }

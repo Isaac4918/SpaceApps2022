@@ -8,8 +8,8 @@ public class CharacterMovement : MonoBehaviour
     
     private float Horizontal;
     private Rigidbody2D Rigidbody2D;
-    public int speed;
-    public int jumpForce;
+    public float speed;
+    public float jumpForce;
     private bool grounded; 
 
 
